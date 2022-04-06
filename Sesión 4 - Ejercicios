@@ -1,0 +1,47 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int numeroIf = 1;
+        int numeroWhile = 0;
+        int numeroDo = 2;
+        var estacion = "Invierno";
+
+    	if (numeroIf > 0) {
+        System.out.println("Es positivo");
+        } else if (numeroIf < 0) {
+            System.out.println("Es negativo");
+        } else System.out.println("Es cero");
+
+        while (numeroWhile<3) {
+            numeroWhile++;
+            System.out.println(numeroWhile);
+        }
+
+        do {numeroDo++;
+            System.out.println(numeroDo);
+        } while (numeroDo < 3);
+
+        for (int numeroFor=0; numeroFor <= 3; numeroFor++) {
+            System.out.println(numeroFor);
+        }
+
+        switch (estacion) {
+            case "Primavera":
+                System.out.println("Es Primavera");
+                break;
+            case "Verano":
+                System.out.println("Es Verano");
+                break;
+            case "Otoño":
+                System.out.println("Es Otoño");
+                break;
+            case "Invierno":
+                System.out.println("Es Invierno");
+                break;
+            default:
+                System.out.println("No es una estación del año.");
+        }
+    }
+}
